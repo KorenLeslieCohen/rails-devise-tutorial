@@ -2,11 +2,7 @@
 
 This code corresponds with a tutorial I prepared re authentication with devise. The full tutorial may be viewed on my blog at: 
 
-Rails Tutorial: Authentication with Devise
-
-
-
-
+<a href="http://korenlc.com/rails-tutorial…on-with-devise/" target="_blank">Rails Tutorial: Authentication with Devise</a>
 
 ## Author
 
