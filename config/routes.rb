@@ -2,21 +2,6 @@ Rails.application.routes.draw do
 
   root 'application#index'
 
-  resources :neighborhoods
-
-  resources :boroughs
-
-  resources :photos
-
-  # tags
-  resources :designers, :only => [:show, :index]
-  resources :biztags, :only => [:show, :index]
-  resources :tags, :only => [:show, :index]
-
-  resources :businesses do 
-    resources :reviews, :only => [:new, :create, :destroy]
-  end
-
   devise_for :users
   resources :users, only: [:index, :show, :edit, :update]
   # The priority is based upon order of creation: first created -> highest priority.
@@ -73,6 +58,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  get "/:page" => "static#show"
 end
